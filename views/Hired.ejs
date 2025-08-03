@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Hired.css">
+  <title>Hired Worker Details</title>
+</head>
+<body>
+  
+  <div class="container">
+    <header class="header">
+      <h1>Hired Worker Details</h1>
+      <p>Meet our talented team members</p>
+    </header>
+    <div class="workers-grid">
+      <% matchedAccounts.forEach(Id => {   %>
+       
+      <div class="worker-card">
+        <div class="worker-image">
+          <img src="\images\836.jpg" sizes="100px" alt="Worker 1">
+        </div>
+        <div class="worker-info">
+          <h2 class="worker-name"><%= Id.fullName %> ( <%= Id.gender %> ) </h2>
+          <!-- <h4 class="worker-name">Gender:<%= Id.gender %></h4> -->
+          <p class="worker-role"><%= Id.profession %></p>
+          <p class="worker-description">Experience: <%= Id.experience %></p>
+          <div>
+            <% Id.skills.split(',').forEach(skill => { %>
+              <span class="skills-tag">Skills: <%= skill.trim() %></span>
+            <% }) %>
+          </div>
+          <div class="worker-details">
+            <span>Location: New York</span>
+            <span>Experience: 5 years</span>
+            <span>Salary: $80,000</span>
+          </div>
+        </div>
+      </div>
+      
+       
+    <% })  %>
+    </div>
+  </div>
+</body>
+</html>
