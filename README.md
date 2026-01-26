@@ -76,11 +76,6 @@ Create a `.env` file with these keys and appropriate values:
 PORT=3000
 MONGO_URI=mongodb+srv://<user>:<pass>@cluster0.mongodb.net/workzap
 SESSION_SECRET=your_session_secret
-JWT_SECRET=your_jwt_secret
-EMAIL_HOST=smtp.example.com
-EMAIL_PORT=587
-EMAIL_USER=you@example.com
-EMAIL_PASS=your_email_password
 ```
 
 **Important**  
@@ -159,4 +154,3 @@ Open an issue or submit a pull request for questions, bug reports, or feature su
 
 ---
 
-I can add this README and a `.env.example` file to your repository—reply with **add files** and I will prepare them for you.
