@@ -2,6 +2,7 @@
 
 **WorkZap** is a platform that connects job seekers with hirers. It provides role specific experiences for **Employees** and **Hirers**, secure authentication, session management, and a real time chat so recruiters and candidates can communicate instantly.
 
+# Live Demo : https://workzap.onrender.com/
 ---
 
 ### Features
