@@ -24,7 +24,7 @@ app.use(express.urlencoded());
 
 
 const store = new mongodbsession({
-  uri: `mongodb+srv://rajansingh8593:rajan123@captanjack.rr7lw.mongodb.net/?retryWrites=true&w=majority&appName=Captanjack`,
+  uri: `MONGODB_URI`,
   collection: 'sessions'
 });
 
@@ -42,7 +42,7 @@ io.on("connection", (socket) => {
 
 
 app.use(session({
-  secret: 'your_secret_key', // Change this to a secure key
+  secret: 'your_secret_key', 
   resave: false,
   saveUninitialized: true,
   store: store,
@@ -57,7 +57,7 @@ app.use((req, res, next) => {
   res.locals.userType = req.session.userType;
   res.locals.username = req.session.username;
   res.locals.email = req.session.email;
-  res.user = req.session.user; // locals hata de agar kaam nhai kar raha hai to
+  res.user = req.session.user; 
   next();
 })
 
@@ -77,3 +77,4 @@ mongoConnect(() => {
     console.log(`server Started At: http://localhost:${port}/home`);
   });
 })
+
