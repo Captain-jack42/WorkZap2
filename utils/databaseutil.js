@@ -2,7 +2,7 @@
 const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
 
-const url = `mongodb+srv://rajansingh8593:rajan123@captanjack.rr7lw.mongodb.net/?retryWrites=true&w=majority&appName=Captanjack`;
+const url = `MONGODB_URI`;
 
 let _db;
 
@@ -26,4 +26,5 @@ const getDB = () =>{
 }
 
 exports.mongoConnect = mongoConnect;
+
 exports.getDB = getDB;
