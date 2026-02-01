@@ -2,7 +2,9 @@
 
 **WorkZap** is a platform that connects job seekers with hirers. It provides role specific experiences for **Employees** and **Hirers**, secure authentication, session management, and a real time chat so recruiters and candidates can communicate instantly.
 
- Live Demo : https://workzap.onrender.com/
+ **Live Demo** : https://workzap.onrender.com/
+ 
+ Docker Image : docker pull rajan72/workzap
 ---
 
 ### Features
@@ -26,6 +28,7 @@
 - **Auth and sessions**: bcryptjs, express-session, JWT, connect-mongodb-session  
 - **Email**: nodemailer  
 - **Dev tools**: nodemon, npm
+- **Container**: Docker
 
 **Key dependencies**
 - **bcryptjs** `^3.0.2`  
